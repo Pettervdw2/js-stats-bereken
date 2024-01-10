@@ -32,16 +32,12 @@ for (let i = 0; i < getallen.length; i++) {
 console.log("Grootste getal is: ", grootste);
 
 // Bepaal het kleinste getal: vergelijk elke getal uit de array
-let kleinste;
+let kleinste = 1000000;
 for (let i = 0; i < getallen.length; i++) {
 	const getal = getallen[i];
 
-	if (kleinste === undefined) {
-		kleinste = getal;
-		continue;
-	}
 	if (kleinste > getal) {
 		kleinste = getal;
 	}
 }
-console.log("Kleinste getal is: ", kleinste);
+console.log("kleinste getal is: ", kleinste);
