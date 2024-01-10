@@ -1,0 +1,47 @@
+// Een simpel array van getallen
+const getallen = [12, 45, 31, 76, 6, 99, 34];
+
+// Berekenen van het totaal: alle getallen bij elkaar optellen
+let totaal = 0;
+for (let i = 0; i < getallen.length; i++) {
+	const getal = getallen[i];
+
+	totaal = totaal + getal;
+}
+console.log("Totaal is: ", totaal);
+
+// Berekenen het gemiddelde: totaal / aantal getallen
+let gemiddelde = 0;
+for (let i = 0; i < getallen.length; i++) {
+	const getal = getallen[i];
+
+	totaal = totaal + getal;
+}
+gemiddelde = totaal / getallen.length;
+console.log("Gemiddelde is: ", gemiddelde);
+
+// Bepaal het grootste getal: vergelijk elke getal uit de array
+let grootste = 0;
+for (let i = 0; i < getallen.length; i++) {
+	const getal = getallen[i];
+
+	if (grootste < getal) {
+		grootste = getal;
+	}
+}
+console.log("Grootste getal is: ", grootste);
+
+// Bepaal het kleinste getal: vergelijk elke getal uit de array
+let kleinste;
+for (let i = 0; i < getallen.length; i++) {
+	const getal = getallen[i];
+
+	if (kleinste === undefined) {
+		kleinste = getal;
+		continue;
+	}
+	if (kleinste > getal) {
+		kleinste = getal;
+	}
+}
+console.log("Kleinste getal is: ", kleinste);
