@@ -41,3 +41,134 @@ for (let i = 0; i < getallen.length; i++) {
 	}
 }
 console.log("kleinste getal is: ", kleinste);
+
+
+
+
+
+
+
+
+
+
+--------------------------------
+
+
+
+
+
+
+
+
+const bitcoin = [40604, 40648, 38275, 30386, 39445, 39121, 38494]
+const datum = ["11 dec", "12 dec", "13 dec", "14 dec", "15 dec", "16 dec", "17 dec"]
+
+let totaal = 0;
+let gemiddelde = 0;
+for (let i = 0; i < bitcoin.length; i++) {
+    const getal = bitcoin[i];
+
+    totaal = totaal + getal;
+}
+gemiddelde = totaal / bitcoin.length;
+console.log("Gemiddelde is: ", gemiddelde);
+
+let grootste = 0;
+for (let i = 0; i < bitcoin.length; i++) {
+    const getal = bitcoin[i];
+
+    if (grootste < getal) {
+        grootste = getal;
+    }
+}
+console.log("hoogste getal is: ", grootste);
+
+let kleinste = 1000000;
+for (let i = 0; i < bitcoin.length; i++) {
+    const getal = bitcoin[i];
+
+    if (kleinste > getal) {
+        kleinste = getal;
+    }
+}
+console.log("laagste getal is: ", kleinste);
+
+
+
+
+
+
+
+const opd2 = [
+    { naam: "Apotheker", beginsalaris: 3450 },
+    { naam: "Automonteur", beginsalaris: 2000 },
+    { naam: "Bouwvakker", beginsalaris: 1650 },
+    { naam: "Electricien", beginsalaris: 2200 },
+    { naam: "Kinderopvang", beginsalaris: 1890 },
+    { naam: "Metselaar", beginsalaris: 2400 },
+    { naam: "Timmerman", beginsalaris: 2300 }
+];
+
+let totaal2 = 0;
+for (let i = 0; i < opd2.length; i++) {
+    const getal = opd2[i].beginsalaris;
+    totaal2 += getal;
+}
+console.log("Totaal aantal beginsalaris is: ", totaal2);
+
+let totaal3 = 0;
+let gemiddelde2 = 0;
+for (let i = 0; i < opd2.length; i++) {
+    const getal = opd2[i].beginsalaris;
+    totaal3 += getal;
+}
+gemiddelde2 = totaal3 / opd2.length
+console.log("Het gemiddelde is: ", gemiddelde2);
+
+let hoogst = 0;
+for (let i = 0; i < opd2.length; i++) {
+    const getal = opd2[i].beginsalaris;
+
+    if (hoogst < getal) {
+        hoogst = getal;
+    }
+}
+console.log("hoogste getal is: ", hoogst);
+
+
+let laagste = 1000000;
+for (let i = 0; i < opd2.length; i++) {
+    const getal = opd2[i].beginsalaris;
+
+    if (laagste > getal) {
+        laagste = getal;
+    }
+}
+console.log("laagste getal is: ", laagste);
+
+
+
+
+//werkt nie
+    const usernameInput = document.querySelectorAll('username');
+    const emailInput = document.querySelector('email');
+
+    // usernameInput.classList.remove('invalid', 'valid');
+    // emailInput.classList.remove('invalid', 'valid');
+
+    const btn = document.querySelector("button")
+    btn.addEventListener("click", function () {
+        if (usernameInput.value.length < 3) {
+            usernameInput.classList.add('invalid');
+        } else {
+            usernameInput.classList.add('valid');
+        }
+        if (emailInput.value.lengt ==  0) {
+            emailInput.classList.add('invalid');
+        } else {
+            emailInput.classList.add('valid');
+        }
+    });
+
+
+    
